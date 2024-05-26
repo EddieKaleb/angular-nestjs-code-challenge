@@ -1,0 +1,93 @@
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-card {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+}
+
+.card {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: $white;
+  border-radius: $border-radius-1;
+  box-shadow: $box-shadow-1;
+  transition: box-shadow 0.25s;
+  max-width: 250px;
+}
+
+.card:hover {
+  box-shadow: $box-shadow-2;
+}
+
+.img-card {
+  width: 100%;
+  border-top-left-radius: $border-radius-1;
+  border-top-right-radius: $border-radius-1;
+  display: block;
+  overflow: hidden;
+}
+
+.img-card img {
+  height: 140px;
+  width: 250px;
+  overflow: hidden;
+  object-fit: cover;
+  transition: all 0.25s ease;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.card-title {
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: $font-size-1;
+}
+
+.card-title a {
+  color: $black;
+  text-decoration: none !important;
+}
+
+.card-read-more {
+  border-top: 1px solid $border-color;
+  display: flex;
+  justify-content: end;
+  padding: 0.5rem;
+}

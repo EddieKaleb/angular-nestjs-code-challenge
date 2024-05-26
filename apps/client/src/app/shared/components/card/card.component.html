@@ -1,0 +1,16 @@
+<div class="card">
+  <a class="img-card" href="#">
+    <img [src]="imgUrl" />
+  </a>
+  <div class="card-content">
+    <h4 class="card-title">
+      {{ title }}
+    </h4>
+    <p class="">
+      {{ description }}
+    </p>
+  </div>
+  <div class="card-read-more">
+    <ng-content (submit)="teste()"></ng-content>
+  </div>
+</div>

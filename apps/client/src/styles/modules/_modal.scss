@@ -1,0 +1,11 @@
+app-modal {
+  display: none;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal-header .btn-close {
+  display: none;
+}
